@@ -1,0 +1,175 @@
+/*
+  Created by : Aditya Suryana
+  NIM        : 10121297
+  adityasuryana.github.io/afecto
+  github.com/adityasuryana
+  2022
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@200;300;400;500;600;700&display=swap');
+
+
+
+* {
+  font-family: 'Merriweather', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+    pointer-events: none;
+}
+
+select {
+  cursor: pointer;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.nav-link {
+  font-family: Mitr;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-link.active {
+  color: rgba(0, 0, 0, 0.8)!important;
+}
+
+.order-button {
+  background-color: black;
+  color: white!important;
+  padding: 10px 30px!important;
+  text-align: center;
+}
+
+.header-text {
+  text-align: justify;
+  font-size: 55px;
+  color: black;
+}
+
+.header-img {
+  height: 550px;
+}
+
+.menu-overflow {
+  max-height: 77.7vh;
+  overflow: auto;
+}
+
+@media (max-width: 1399px) {
+  .header-text {
+    font-size: 45px;
+    margin-right: 25px;
+  }
+
+  .menu-overflow {
+    max-height: 68.7vh;
+    overflow: auto;
+  }
+}
+
+@media (max-width: 1199px) {
+  .header-text {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-text {
+    font-size: 25px;
+  }
+}
+
+.card {
+  border: none;
+}
+
+.img-cover {
+  object-fit: cover;
+}
+
+.img-fit {
+  object-position: 0px 53%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: white;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  background-color: black;
+}
+
+footer a {
+  color: white;
+}
+
+.sticky-footer {
+  margin-top: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.quantity {
+ display: inline-block; }
+
+.quantity .input-text.qty {
+ width: 50px;
+ height: 41px;
+ padding: 0 5px;
+ text-align: center;
+ background-color: transparent;
+ border: 1px solid #efefef;
+}
+
+.quantity.buttons_added {
+ text-align: left;
+ position: relative;
+ white-space: nowrap;
+ vertical-align: top; }
+
+.quantity.buttons_added input {
+ display: inline-block;
+ margin: 0;
+ vertical-align: top;
+ box-shadow: none;
+}
+
+.quantity.buttons_added .minus,
+.quantity.buttons_added .plus {
+ padding: 7px 10px 8px;
+ height: 41px;
+ background-color: #ffffff;
+ border: 1px solid #efefef;
+ cursor:pointer;}
+
+.quantity.buttons_added .minus {
+ border-right: 0; }
+
+.quantity.buttons_added .plus {
+ border-left: 0; }
+
+.quantity.buttons_added .minus:hover,
+.quantity.buttons_added .plus:hover {
+ background: #eeeeee; }
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ margin: 0; }
+
+ .quantity.buttons_added .minus:focus,
+.quantity.buttons_added .plus:focus {
+ outline: none; }

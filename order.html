@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--
+      Created by : Aditya Suryana
+      NIM        : 10121297
+      adityasuryana.github.io/afecto
+      github.com/adityasuryana
+      2022
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Order | Afecto.</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light mb-3 py-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo-1.png" width="100%" height="50px" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto">
+            <a class="nav-link mx-2" href="index.html">Home</a>
+            <a class="nav-link mx-2" href="about.html">About</a>
+            <a class="nav-link mx-2" href="menu.html">Menu</a>
+          </div>
+
+          <div class="navbar-nav">
+            <a class="nav-link order-button mx-2" href="order.html"><i class="fa-solid fa-cart-shopping me-2"></i>Order</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row mt-2">
+        <div class="col-12 mt-3">
+          <h2 class="text-center"><b>Order</b></h2>
+        </div>
+
+        <form class="formOrder">
+          <div class="row">
+          <div class="col-xxl-8 col-lg-7 col-12">
+          <div class="row menu-overflow">
+            <div class="col-12 mt-3">
+              <h4 class="text-center"><b>Menu</b></h4>
+            </div>
+
+            <div class="col-4 mt-3">
+              <img src="img/espresso.jpg" class="img-cover" width="100%" height="150px" alt="">
+              <div class="mt-2">
+                <h4>Espresso</h4>
+                <p>Rp 15.000</p>
+                <div class="quantity buttons_added">
+                	<input type="button" value="-" class="minus">
+                  <input type="number" step="1" min="0" max="" value="0" id="espresso" name="espresso" class="input-text qty text" size="4">
+                  <input type="button" value="+" class="plus">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 mt-3">
+              <img src="img/americano.jpg" class="img-cover" width="100%" height="150px" alt="">
+
+              <div class="mt-2">
+                <h4>Americano</h4>
+                <p>Rp 20.000</p>
+                <div class="quantity buttons_added">
+                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="americano" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 mt-3">
+              <img src="img/iceafecto.jpg" class="img-cover" width="100%" height="150px" alt="">
+
+              <div class="mt-2">
+                <h4>Ice Afecto</h4>
+                <p>Rp 25.000</p>
+                <div class="quantity buttons_added">
+                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 mt-3">
+              <img src="img/creme.jpg" class="img-cover" width="100%" height="150px" alt="">
+
+              <div class="mt-2">
+                <h4>Creme Brule</h4>
+                <p>Rp 27.000</p>
+                <div class="quantity buttons_added">
+                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 mt-3">
+              <img src="img/latte.jpg" class="img-cover" width="100%" height="150px" alt="">
+
+              <div class="mt-2">
+                <h4>Coffee Latte</h4>
+                <p>Rp 25.000</p>
+                <div class="quantity buttons_added">
+                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 mt-3">
+              <img src="img/affogato.jpg" class="img-cover" width="100%" height="150px" alt="">
+
+              <div class="mt-2">
+                <h4>Affogato</h4>
+                <p>Rp 26.000</p>
+                <div class="quantity buttons_added">
+                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 mt-3">
+              <img src="img/charcoal.jpg" class="img-cover" width="100%" height="150px" alt="">
+
+              <div class="mt-2">
+                <h4>Charcoal</h4>
+                <p>Rp 28.000</p>
+                <div class="quantity buttons_added">
+                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 mt-3">
+              <img src="img/milkshakeberry.jpg" class="img-cover" width="100%" height="150px" alt="">
+
+              <div class="mt-2">
+                <h4>Milkshake</h4>
+                <p>Rp 27.000</p>
+                <div class="quantity buttons_added">
+                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 mt-3">
+              <img src="img/choberry.jpg" class="img-cover" width="100%" height="150px" alt="">
+
+              <div class="mt-2">
+                <h4>Choco Berry</h4>
+                <p>Rp 28.000</p>
+                <div class="quantity buttons_added">
+                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 mt-3">
+              <img src="img/jacs.jpg" class="img-cover" width="100%" height="150px" alt="">
+
+              <div class="mt-2">
+                <h4>Jac's Secret</h4>
+                <p>Rp 27.000</p>
+                <div class="quantity buttons_added">
+                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 mt-3">
+              <img src="img/berry-lime.jpg" class="img-cover" width="100%" height="150px" alt="">
+
+              <div class="mt-2">
+                <h4>Perfect Indigo</h4>
+                <p>Rp 28.000</p>
+                <div class="quantity buttons_added">
+                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 mt-3">
+              <img src="img/green-sunday.jpg" class="img-cover" width="100%" height="150px" alt="">
+
+              <div class="mt-2">
+                <h4>Green Sunday</h4>
+                <p>Rp 28.000</p>
+                <div class="quantity buttons_added">
+                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 mt-3">
+              <img src="img/fries.jpg" class="img-cover" width="100%" height="150px" alt="">
+
+              <div class="mt-2">
+                <h4>French Fries</h4>
+                <p>Rp 20.000</p>
+                <div class="quantity buttons_added">
+                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 mt-3">
+              <img src="img/taichan.jpg" class="img-cover" width="100%" height="150px" alt="">
+
+              <div class="mt-2">
+                <h4>Taichan</h4>
+                <p>Rp 28.000</p>
+                <div class="quantity buttons_added">
+                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 mt-3">
+              <img src="img/tahu.jpg" class="img-cover" width="100%" height="150px" alt="">
+
+              <div class="mt-2">
+                <h4>Fried Chili Salt Tofu</h4>
+                <p>Rp 20.000</p>
+                <div class="quantity buttons_added">
+                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 mt-3">
+              <button type="reset" class="btn btn-light w-15 me-3" value="reset">Reset</button>
+              <button type="button" class="btn btn-success w-75" value="send" onclick="send()">Next</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-4 col-lg-5 col-12">
+          <div class="row">
+            <div class="col-12 mt-3">
+              <h4 class="text-center"><b>Order Detail</b></h4>
+            </div>
+
+            <div class="col-12 mt-2">
+              <div class="row">
+                <label class="col-xxl-3 col-xl-3 col-md-4 col-sm-4 col-4">Total</label>
+                <input class="col-xxl-9 col-xl-9 col-md-8 col-sm-8 col-7" name="total" disabled>
+              </div>
+
+              <div class="row mt-2">
+                <label class="col-xxl-3 col-xl-3 col-md-4 col-sm-4 col-4">Americano</label>
+                <input class="col-xxl-9 col-xl-9 col-md-8 col-sm-8 col-7" name="menu2" disabled>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+    <footer class="mt-3">
+      <a href="https://adityasuryana.github.io/profile/" target="_blank">Afecto.</a>
+    </footer>
+
+    <script src="js/bootstrap.js" charset="utf-8"></script>
+    <script>
+      function send(){
+        var espressoP = 15000;
+        var americanoP = 20000;
+
+        var espressoQ = (document.formOrder.espresso.value);
+        var americanoQ = (document.formOrder.americano.value);
+
+        var tot = (espressoQ * espressoP) + (americanoQ * americanoP);
+
+        document.formOrder.total.value = total;
+
+      }
+    </script>
+  </body>
+</html>
