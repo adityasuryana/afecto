@@ -29,6 +29,15 @@ select {
   cursor: pointer;
 }
 
+label {
+  align-self: center;
+}
+
+.outputMenu {
+  border: 0!important;
+  padding: 8px 5px!important;
+}
+
 .text-justify {
   text-align: justify;
 }
@@ -50,6 +59,15 @@ select {
   text-align: center;
 }
 
+.pay-button {
+  background-color: black;
+  color: white;
+  padding: 10px 0px;
+  text-align: center;
+  font-weight:bolder;
+
+}
+
 .header-text {
   text-align: justify;
   font-size: 55px;
@@ -62,6 +80,11 @@ select {
 
 .menu-overflow {
   max-height: 77.7vh;
+  overflow: auto;
+}
+
+.menu-overflow-small {
+  max-height: 45vh;
   overflow: auto;
 }
 
