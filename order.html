@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-
+    <script src="js/bootstrap.js" charset="utf-8"></script>
     <script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/script.js" charset="utf-8"></script>
   </head>
@@ -49,7 +49,7 @@
           <h2 class="text-center"><b>Order</b></h2>
         </div>
 
-        <form class="formOrder">
+        <form name="formOrder">
           <div class="row">
           <div class="col-xxl-8 col-lg-7 col-12">
           <div class="row menu-overflow">
@@ -64,7 +64,7 @@
                 <p>Rp 15.000</p>
                 <div class="quantity buttons_added">
                 	<input type="button" value="-" class="minus">
-                  <input type="number" step="1" min="0" max="" value="0" id="espresso" name="espresso" class="input-text qty text" size="4">
+                  <input type="number" class="input-text qty text" step="1" min="0" value="0" name="espresso">
                   <input type="button" value="+" class="plus">
                 </div>
               </div>
@@ -77,7 +77,9 @@
                 <h4>Americano</h4>
                 <p>Rp 20.000</p>
                 <div class="quantity buttons_added">
-                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="americano" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                  <input type="button" value="-" class="minus">
+                  <input type="number" class="input-text qty text" step="1" min="0" value="0" name="americano">
+                  <input type="button" value="+" class="plus">
                 </div>
               </div>
             </div>
@@ -89,7 +91,9 @@
                 <h4>Ice Afecto</h4>
                 <p>Rp 25.000</p>
                 <div class="quantity buttons_added">
-                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                  <input type="button" value="-" class="minus">
+                  <input type="number" class="input-text qty text" step="1" min="0" value="0" name="iceAfecto">
+                  <input type="button" value="+" class="plus">
                 </div>
               </div>
             </div>
@@ -101,7 +105,9 @@
                 <h4>Creme Brule</h4>
                 <p>Rp 27.000</p>
                 <div class="quantity buttons_added">
-                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                  <input type="button" value="-" class="minus">
+                  <input type="number" class="input-text qty text" step="1" min="0" value="0" name="cremeBrule">
+                  <input type="button" value="+" class="plus">
                 </div>
               </div>
             </div>
@@ -113,7 +119,9 @@
                 <h4>Coffee Latte</h4>
                 <p>Rp 25.000</p>
                 <div class="quantity buttons_added">
-                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                  <input type="button" value="-" class="minus">
+                  <input type="number" class="input-text qty text" step="1" min="0" value="0" name="latte">
+                  <input type="button" value="+" class="plus">
                 </div>
               </div>
             </div>
@@ -125,7 +133,9 @@
                 <h4>Affogato</h4>
                 <p>Rp 26.000</p>
                 <div class="quantity buttons_added">
-                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                  <input type="button" value="-" class="minus">
+                  <input type="number" class="input-text qty text" step="1" min="0" value="0" name="affogato">
+                  <input type="button" value="+" class="plus">
                 </div>
               </div>
             </div>
@@ -137,7 +147,9 @@
                 <h4>Charcoal</h4>
                 <p>Rp 28.000</p>
                 <div class="quantity buttons_added">
-                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                  <input type="button" value="-" class="minus">
+                  <input type="number" class="input-text qty text" step="1" min="0" value="0" name="charcoal">
+                  <input type="button" value="+" class="plus">
                 </div>
               </div>
             </div>
@@ -149,7 +161,9 @@
                 <h4>Milkshake</h4>
                 <p>Rp 27.000</p>
                 <div class="quantity buttons_added">
-                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                  <input type="button" value="-" class="minus">
+                  <input type="number" class="input-text qty text" step="1" min="0" value="0" name="milkshake">
+                  <input type="button" value="+" class="plus">
                 </div>
               </div>
             </div>
@@ -161,7 +175,9 @@
                 <h4>Choco Berry</h4>
                 <p>Rp 28.000</p>
                 <div class="quantity buttons_added">
-                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                  <input type="button" value="-" class="minus">
+                  <input type="number" class="input-text qty text" step="1" min="0" value="0" name="chocoBerry">
+                  <input type="button" value="+" class="plus">
                 </div>
               </div>
             </div>
@@ -173,7 +189,9 @@
                 <h4>Jac's Secret</h4>
                 <p>Rp 27.000</p>
                 <div class="quantity buttons_added">
-                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                  <input type="button" value="-" class="minus">
+                  <input type="number" class="input-text qty text" step="1" min="0" value="0" name="jacs">
+                  <input type="button" value="+" class="plus">
                 </div>
               </div>
             </div>
@@ -185,7 +203,9 @@
                 <h4>Perfect Indigo</h4>
                 <p>Rp 28.000</p>
                 <div class="quantity buttons_added">
-                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                  <input type="button" value="-" class="minus">
+                  <input type="number" class="input-text qty text" step="1" min="0" value="0" name="indigo">
+                  <input type="button" value="+" class="plus">
                 </div>
               </div>
             </div>
@@ -197,7 +217,9 @@
                 <h4>Green Sunday</h4>
                 <p>Rp 28.000</p>
                 <div class="quantity buttons_added">
-                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                  <input type="button" value="-" class="minus">
+                  <input type="number" class="input-text qty text" step="1" min="0" value="0" name="greenSunday">
+                  <input type="button" value="+" class="plus">
                 </div>
               </div>
             </div>
@@ -209,7 +231,9 @@
                 <h4>French Fries</h4>
                 <p>Rp 20.000</p>
                 <div class="quantity buttons_added">
-                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                  <input type="button" value="-" class="minus">
+                  <input type="number" class="input-text qty text" step="1" min="0" value="0" name="fries">
+                  <input type="button" value="+" class="plus">
                 </div>
               </div>
             </div>
@@ -221,8 +245,9 @@
                 <h4>Taichan</h4>
                 <p>Rp 28.000</p>
                 <div class="quantity buttons_added">
-                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
-                </div>
+                  <input type="button" value="-" class="minus">
+                  <input type="number" class="input-text qty text" step="1" min="0" value="0" name="taichan">
+                  <input type="button" value="+" class="plus"></div>
               </div>
             </div>
 
@@ -233,8 +258,9 @@
                 <h4>Fried Chili Salt Tofu</h4>
                 <p>Rp 20.000</p>
                 <div class="quantity buttons_added">
-                	<input type="button" value="-" class="minus"><input type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
-                </div>
+                  <input type="button" value="-" class="minus">
+                  <input type="number" class="input-text qty text" step="1" min="0" value="0" name="tofu">
+                  <input type="button" value="+" class="plus"></div>
               </div>
             </div>
 
@@ -251,17 +277,93 @@
               <h4 class="text-center"><b>Order Detail</b></h4>
             </div>
 
-            <div class="col-12 mt-2">
+            <div class="col-12 mt-2 menu-overflow-small">
               <div class="row">
-                <label class="col-xxl-3 col-xl-3 col-md-4 col-sm-4 col-4">Total</label>
-                <input class="col-xxl-9 col-xl-9 col-md-8 col-sm-8 col-7" name="total" disabled>
+                <label class="col-xxl-4 col-xl-4 col-md-4 col-sm-4 col-4">Espresso</label>
+                <input class="col-xxl-8 col-xl-8 col-md-8 col-sm-8 col-7 outputMenu" name="menu1" disabled>
               </div>
 
               <div class="row mt-2">
-                <label class="col-xxl-3 col-xl-3 col-md-4 col-sm-4 col-4">Americano</label>
-                <input class="col-xxl-9 col-xl-9 col-md-8 col-sm-8 col-7" name="menu2" disabled>
+                <label class="col-xxl-4 col-xl-4 col-md-4 col-sm-4 col-4">Americano</label>
+                <input class="col-xxl-8 col-xl-8 col-md-8 col-sm-8 col-7 outputMenu" name="menu2" disabled>
               </div>
 
+              <div class="row mt-2">
+                <label class="col-xxl-4 col-xl-4 col-md-4 col-sm-4 col-4">Ice Afecto</label>
+                <input class="col-xxl-8 col-xl-8 col-md-8 col-sm-8 col-7 outputMenu" name="menu3" disabled>
+              </div>
+
+              <div class="row mt-2">
+                <label class="col-xxl-4 col-xl-4 col-md-4 col-sm-4 col-4">Creme brule</label>
+                <input class="col-xxl-8 col-xl-8 col-md-8 col-sm-8 col-7 outputMenu" name="menu4" disabled>
+              </div>
+
+              <div class="row mt-2">
+                <label class="col-xxl-4 col-xl-4 col-md-4 col-sm-4 col-4">Coffee Latte</label>
+                <input class="col-xxl-8 col-xl-8 col-md-8 col-sm-8 col-7 outputMenu" name="menu5" disabled>
+              </div>
+
+              <div class="row mt-2">
+                <label class="col-xxl-4 col-xl-4 col-md-4 col-sm-4 col-4">Affogato</label>
+                <input class="col-xxl-8 col-xl-8 col-md-8 col-sm-8 col-7 outputMenu" name="menu6" disabled>
+              </div>
+
+              <div class="row mt-2">
+                <label class="col-xxl-4 col-xl-4 col-md-4 col-sm-4 col-4">Charcoal</label>
+                <input class="col-xxl-8 col-xl-8 col-md-8 col-sm-8 col-7 outputMenu" name="menu7" disabled>
+              </div>
+
+              <div class="row mt-2">
+                <label class="col-xxl-4 col-xl-4 col-md-4 col-sm-4 col-4">Milkshake</label>
+                <input class="col-xxl-8 col-xl-8 col-md-8 col-sm-8 col-7 outputMenu" name="menu8" disabled>
+              </div>
+
+              <div class="row mt-2">
+                <label class="col-xxl-4 col-xl-4 col-md-4 col-sm-4 col-4">Choco Berry</label>
+                <input class="col-xxl-8 col-xl-8 col-md-8 col-sm-8 col-7 outputMenu" name="menu9" disabled>
+              </div>
+
+              <div class="row mt-2">
+                <label class="col-xxl-4 col-xl-4 col-md-4 col-sm-4 col-4">Jac's Secret</label>
+                <input class="col-xxl-8 col-xl-8 col-md-8 col-sm-8 col-7 outputMenu" name="menu10" disabled>
+              </div>
+
+              <div class="row mt-2">
+                <label class="col-xxl-4 col-xl-4 col-md-4 col-sm-4 col-4">Perfect Indigo</label>
+                <input class="col-xxl-8 col-xl-8 col-md-8 col-sm-8 col-7 outputMenu" name="menu11" disabled>
+              </div>
+
+              <div class="row mt-2">
+                <label class="col-xxl-4 col-xl-4 col-md-4 col-sm-4 col-4">Green Sunday</label>
+                <input class="col-xxl-8 col-xl-8 col-md-8 col-sm-8 col-7 outputMenu" name="menu12" disabled>
+              </div>
+
+              <div class="row mt-2">
+                <label class="col-xxl-4 col-xl-4 col-md-4 col-sm-4 col-4">French Fries</label>
+                <input class="col-xxl-8 col-xl-8 col-md-8 col-sm-8 col-7 outputMenu" name="menu13" disabled>
+              </div>
+
+              <div class="row mt-2">
+                <label class="col-xxl-4 col-xl-4 col-md-4 col-sm-4 col-4">Taichan</label>
+                <input class="col-xxl-8 col-xl-8 col-md-8 col-sm-8 col-7 outputMenu" name="menu14" disabled>
+              </div>
+
+              <div class="row mt-2">
+                <label class="col-xxl-4 col-xl-4 col-md-4 col-sm-4 col-4">Fried Chili Salt Tofu</label>
+                <input class="col-xxl-8 col-xl-8 col-md-8 col-sm-8 col-7 outputMenu" name="menu15" disabled>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="row mt-5">
+                <h4 class="col-xxl-4 col-xl-4 col-md-4 col-sm-4 col-4"><b>Total</b></h4>
+                <input class="col-xxl-8 col-xl-8 col-md-8 col-sm-8 col-7 outputMenu" name="total" disabled>
+              </div>
+
+              <div class="row mt-3 mx-5">
+                <button type="button" class="pay-button" name="button">Pay</button>
+              </div>
+            </div>
 
             </div>
 
@@ -270,22 +372,80 @@
       </div>
     </form>
   </div>
-</div>
 
-    <footer class="mt-3">
+    <footer class="mt-5">
       <a href="https://adityasuryana.github.io/profile/" target="_blank">Afecto.</a>
     </footer>
 
-    <script src="js/bootstrap.js" charset="utf-8"></script>
+
     <script>
       function send(){
         var espressoP = 15000;
         var americanoP = 20000;
+        var iceAfectoP = 25000;
+        var cremeBruleP = 26000;
+        var latteP = 25000;
+        var affogatoP = 26000;
+        var charcoalP = 28000;
+        var milkshakeP = 27000;
+        var choberryP = 28000;
+        var jacsP = 27000;
+        var indigoP = 28000;
+        var greenSundayP = 28000;
+        var friesP = 20000;
+        var taichanP = 28000;
+        var tofuP = 20000;
 
         var espressoQ = (document.formOrder.espresso.value);
         var americanoQ = (document.formOrder.americano.value);
+        var iceAfectoQ = (document.formOrder.iceAfecto.value);
+        var cremeBruleQ = (document.formOrder.cremeBrule.value);
+        var latteQ = (document.formOrder.latte.value);
+        var affogatoQ = (document.formOrder.affogato.value);
+        var charcoalQ = (document.formOrder.charcoal.value);
+        var milkshakeQ = (document.formOrder.milkshake.value);
+        var choBerryQ = (document.formOrder.chocoBerry.value);
+        var jacsQ = (document.formOrder.jacs.value);
+        var indigoQ = (document.formOrder.indigo.value);
+        var greenSundayQ = (document.formOrder.greenSunday.value);
+        var friesQ = (document.formOrder.fries.value);
+        var taichanQ = (document.formOrder.taichan.value);
+        var tofuQ = (document.formOrder.tofu.value);
 
-        var tot = (espressoQ * espressoP) + (americanoQ * americanoP);
+        menu1 = espressoQ * espressoP;
+        menu2 = americanoQ * americanoP;
+        menu3 = iceAfectoQ * iceAfectoP;
+        menu4 = cremeBruleQ * cremeBruleP;
+        menu5 = latteQ * latteP;
+        menu6 = affogatoQ * affogatoP;
+        menu7 = charcoalQ * charcoalP;
+        menu8 = milkshakeQ * milkshakeP;
+        menu9 = choBerryQ * choberryP;
+        menu10 = jacsQ * jacsP;
+        menu11 = indigoQ * indigoP;
+        menu12 = greenSundayQ * greenSundayP;
+        menu13 = friesQ * friesP;
+        menu14 = taichanQ * taichanP;
+        menu15 = tofuQ * tofuP;
+
+        var total = (espressoQ * espressoP) + (americanoQ * americanoP) + (iceAfectoQ * iceAfectoP) + (cremeBruleQ * cremeBruleP) + (latteQ * latteP) +
+        (affogatoQ * affogatoP) + (charcoalQ * charcoalP) + (milkshakeQ * milkshakeP) + (choBerryQ * choberryP) + (jacsQ * jacsP) + (indigoQ * indigoP) +
+        (greenSundayQ * greenSundayP) + (friesQ * friesP) + (taichanQ * taichanP) + (tofuQ * tofuP);
+        document.formOrder.menu1.value = menu1;
+        document.formOrder.menu2.value = menu2;
+        document.formOrder.menu3.value = menu3;
+        document.formOrder.menu4.value = menu4;
+        document.formOrder.menu5.value = menu5;
+        document.formOrder.menu6.value = menu6;
+        document.formOrder.menu7.value = menu7;
+        document.formOrder.menu8.value = menu8;
+        document.formOrder.menu9.value = menu9;
+        document.formOrder.menu10.value = menu10;
+        document.formOrder.menu11.value = menu11;
+        document.formOrder.menu12.value = menu12;
+        document.formOrder.menu13.value = menu13;
+        document.formOrder.menu14.value = menu14;
+        document.formOrder.menu15.value = menu15;
 
         document.formOrder.total.value = total;
 
