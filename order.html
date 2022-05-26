@@ -356,12 +356,12 @@
 
             <div class="col-12">
               <div class="row mt-5">
-                <h4 class="col-xxl-4 col-xl-4 col-md-4 col-sm-4 col-4"><b>Total</b></h4>
+                <h4 class="col-xxl-4 col-xl-4 col-md-4 col-sm-4 col-4 text-center vertical-align-s"><b>Total</b></h4>
                 <input class="col-xxl-8 col-xl-8 col-md-8 col-sm-8 col-7 outputMenu" name="total" disabled>
               </div>
 
               <div class="row mt-3 mx-5">
-                <button type="button" class="pay-button" name="button">Pay</button>
+                <button type="button" class="pay-button" name="button" data-bs-toggle="modal" data-bs-target="#order">Order</button>
               </div>
             </div>
 
@@ -372,6 +372,18 @@
       </div>
     </form>
   </div>
+
+  <div class="modal fade" id="order" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body p-4">
+        <h3 class="text-center">We Received Your Order</h3>
+        <h5 class="text-justify">Please wait, your order will serve to your table.</h5>
+        <button type="button" class="col-12 pay-button mt-4" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     <footer class="mt-5">
       <a href="https://adityasuryana.github.io/profile/" target="_blank">Afecto.</a>
