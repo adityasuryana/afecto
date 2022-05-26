@@ -6,8 +6,7 @@
   2022
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@200;300;400;500;600;700&display=swap');
 
@@ -38,6 +37,10 @@ label {
   padding: 8px 5px!important;
 }
 
+.vertical-align-s {
+  vertical-align: sub;
+}
+
 .text-justify {
   text-align: justify;
 }
@@ -65,7 +68,7 @@ label {
   padding: 10px 0px;
   text-align: center;
   font-weight:bolder;
-
+  border: 0;
 }
 
 .header-text {
